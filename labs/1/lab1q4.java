@@ -1,10 +1,11 @@
 import java.util.Scanner;
-	class Energy{
-		public static void main{
+
+class lab1q4 { // JA: This name has to match the name of the file
+	public static void main(String[] args){
 		Scanner input = new Scanner(System.in);
-		system.out.print("Enter a mass: ");
-		double mass = input.mass();
-		int energy = (int) (mass * Math.pow(299972458, 2));
-		system.out.print("The Energy is: ", energy);
+		System.out.print("Enter a mass: ");
+		double mass = input.nextDouble(); // JA
+		long energy = (long) (mass * Math.pow(299972458, 2));
+		System.out.print("The Energy is: " + energy);
 	}
 }
