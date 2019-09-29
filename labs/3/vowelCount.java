@@ -5,7 +5,9 @@ public class vowelCount {
 		Scanner in = new Scanner(System.in);
 		System.out.print("Enter some letters: ");
 		String letters = in.nextLine();
+		System.out.print("There are " + numVowels(letters) + " vowels in those letters.");		
 	}
+	
 	public static int numVowels(String letters) {
 		int count = 0;
 		for(int i = 0; i < letters.length(); i ++) {
@@ -14,6 +16,5 @@ public class vowelCount {
 			}
 		}
 		return count;
-		System.out.print("There are " + numVowels(letters) + " vowels in those letters.");
 	}
 }

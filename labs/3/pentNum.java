@@ -4,12 +4,12 @@ public class pentNum {
 	public static void main(String[] args) {
 		int count = 0;
 		for(int i = 0; i <= 50; i++) {
-			System.out.println("Enter an integer value: ");
 			int n = new int[];
+			System.out.print(pent(i) + " ");
 			if(count % 10 == 0) {
-				System.out.print();
-				count++;
+				System.out.println();
 			}
+			count++;
 		}
 	}
 	public static int pent(int[] n) {

@@ -12,6 +12,6 @@ public class avgCalc {
 		System.out.print("The average is: " + average(a, b, c));
 	}
 	public static double average(double a, double b, double c) {
-		return (a, b, c) / 3;
+		return (a + b + c) / 3;
 	}
 }

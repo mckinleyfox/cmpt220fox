@@ -5,7 +5,7 @@ public class divCalc {
 		int count = 0;
 		int line = 10;
 		for(int i = 100; i <= 500; i++) {
-			if(i % 5 == 0 || i % 7 == 0 ) {
+			if(i % 5 == 0 ^ i % 7 == 0 ) { // JA
 				count ++;
 				if( count % line == 0) {
 					System.out.println(i);
