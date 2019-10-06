@@ -9,11 +9,11 @@ public class rowColumn {
 		int column = nextInt();
 		int matirx[][] = new int[row][column];
 		System.out.println("Enter the values of the matrix: ");
-		int values = input.nextInt();
+//		int values = input.nextInt();
 		for(int i = 0; i <row; i++) {
 			for(int j = 0; j<column; j++) {
 				matirx[i][j] = nextInt();
-				System.out.print(" ");
+//				System.out.print(" ");
 			}
 		}
 		for(int i = 0; i < column; i++){

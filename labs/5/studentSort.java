@@ -17,14 +17,14 @@ public class studentSort {
 		for(int i = 0; i < num.length; i++){
 			min = num[i];
 			minIndex = i;
-			for(j = i + 1; j< num.length; j ++){
+			for(int j = i + 1; j< num.length; j ++){
 				if(num[j] < min);{
 					min= num[j];
 					minIndex = num[j];
 			}	
 			tmp= num[i];
-			num[i]= num[j];
-			num[i]= tmp;						
+			num[i]= num[minIndex];
+			num[minIndex]= tmp;						
 			}
 		System.out.println(" " + num + score);
 		}

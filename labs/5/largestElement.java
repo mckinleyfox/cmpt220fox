@@ -1,9 +1,11 @@
 import java.util.Scanner;
 
+import java.util.Scanner;
+
 public class largestElement {
 
 	public static void main(String[] args) {
-		Scanner input = new Scannner(System.in);
+		Scanner input = new Scanner(System.in);
 		System.out.println("Enter 10 numbers: ");
 		double[] a = new double[10];
 		a[0] = input.nextDouble();
@@ -16,6 +18,7 @@ public class largestElement {
 		a[7] = input.nextDouble();
 		a[8] = input.nextDouble();
 		a[9] = input.nextDouble();
+		System.out.println("The maximum value is: " + max(a));
 	}
 	
 	public static double max(double[] a) {
@@ -26,7 +29,6 @@ public class largestElement {
 			}	
 		}
 		return max;
-		System.out.println("The maximum value is: " + max);
 		
 	}
 

@@ -11,15 +11,18 @@ public class rowAvg {
 		double [][] array = new double[rows][col];
 		System.out.println("Enter the numbers in the array: ");
 	}
-	public static double averageRow(double[][] row) {
-		double avg [] = new double[row.length];
+	
+	// JA: The average is for a specific row
+	public static double averageRow(double[][] row, int index) {
+//		double avg [] = new double[row.length];
+		double avg = 0;
 		double sum = 0;
-		for(int i = 0; i<row.length; i++) {
+//		for(int i = 0; i<row.length; i++) {
 			for(int j = 0; j< row.length; j++) {
-				sum = row[i][j];
-				avg[i] = sum/row.length;			
+				sum += row[index][j];
 			}
-		}
+//		}
+		avg = sum/row.length;			
 		return avg;
 	}
 

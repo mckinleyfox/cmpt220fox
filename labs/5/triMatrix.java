@@ -6,6 +6,11 @@ public class triMatrix {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Input the elements of the matrix : ");
 		double matrix = new double[][];
+		if (isUpperTriangular(matrix))
+			System.out.println("It is an upper triangle matrix.");
+		else
+			System.out.println("It is not an upper triangle matrix.");
+
 	}
 	public static boolean isUpperTriangular(double[][] array) {
 		for(i = 0; i < matrix.length; i++){
@@ -14,13 +19,11 @@ public class triMatrix {
 		}
 		for (int i = 1; i < matrix.length ; i++) {
             for (int j = 0; j < i; j++) {
-                if (array[i][j] != 0) {
+                if (i>j && array[i][j] != 0) {
                     return false;
-                    System.out.println("It is not an upper triangle matrix.");
                 }
             }
 		}
         return true; 
-        System.out.println("It is an upper triangle matrix.");
 	}
 }
