@@ -8,32 +8,32 @@ public class outputs {
 		System.out.print("Enter the second number: ");
 		int num2 = input.nextInt();
 		
-		if(num 1 < num 2) {
+		if(num1 < num2) {
 			System.out.println(num1 + "is LESS THAN " + num2 + "? TRUE");
 		}
 		else
 			System.out.println(num1 + "is LESS THAN " + num2 + "? FALSE");
-		if(num 1 <= num 2) {
+		if(num1 <= num2) {
 			System.out.println(num1 + "is LESS THAN OR EQUAL TO" + num2 + "? TRUE");
 		}
 		else
 			System.out.println(num1 + "is LESS THAN OR EQUAL TO" + num2 + "? FALSE");
-		if(num 1 == num 2) {
+		if(num1 == num2) {
 			System.out.println(num1 + "is EQUALS " + num2 + "? TRUE");
 		}
 		else
 			System.out.println(num1 + "is EQUALS " + num2 + "? FALSE");
-		if(num 1 != num 2) {
+		if(num1 != num2) {
 			System.out.println(num1 + "is DOES NOT EQUAL " + num2 + "? TRUE");
 		}
 		else
 			System.out.println(num1 + "is DOES NOT EQUAL " + num2 + "? FALSE");
-		if(num 1 > num 2) {
+		if(num1 > num2) {
 			System.out.println(num1 + "is GREATER THAN " + num2 + "? TRUE");
 		}
 		else
 			System.out.println(num1 + "is GREATER THAN " + num2 + "? FALSE");
-		if(num 1 >= num 2) {
+		if(num1 >= num2) {
 			System.out.println(num1 + "is GREATER THAN OR EQUAL TO " + num2 + "? TRUE");
 		}
 		else

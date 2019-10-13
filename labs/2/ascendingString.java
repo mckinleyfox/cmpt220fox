@@ -4,9 +4,9 @@ public class ascendingString {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		System.out.print("Enter first number:");
+		System.out.print("Enter first string:");
 		String num1 = input.next();
-		System.out.print("Enter second number:"); 
+		System.out.print("Enter second string:"); 
 		String num2 = input.next(); 
 		System.out.println(num1.compareTo(num2));
 		
@@ -16,6 +16,7 @@ public class ascendingString {
 		} else {							
 			System.out.println(num2);
 			System.out.println(num1);
+		}
 
 	}
 

@@ -10,9 +10,9 @@ public class randomInt {
 		System.out.print("Enter an upper limit: ");
 		int upper = input.nextInt();
 		
-		System.out.println("Random number one is: " + (int) Math.random()*(upper-lower));
-		System.out.println("Random number two is: " + (int)Math.random()*(upper-lower));
-		System.out.println("Random number three is: " + (int) Math.random()*(upper-lower));
+		System.out.println("Random number one is: " + (int) (Math.random()*(upper-lower) + lower));
+		System.out.println("Random number two is: " + (int)(Math.random()*(upper-lower) + lower));
+		System.out.println("Random number three is: " + (int) (Math.random()*(upper-lower) + lower));
 
 	}
 
