@@ -22,7 +22,7 @@ public class Bond {
 	}
 	public static double getPrice() {
 		double price;
-		price = (c * ( 1-(1/Math.pow(1+i, n)))) + (m*(1/Math.pow(1+i, n)));
+		price = (coupon * ( 1-(1/Math.pow(1+interest, payments)))) + (valueMaturity*(1/Math.pow(1+interest, payments))); // JA
 		return price;
 	}
 	

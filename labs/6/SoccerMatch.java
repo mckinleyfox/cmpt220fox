@@ -1,6 +1,8 @@
+import java.util.Date;
 
 public class SoccerMatch {
-	public static void main(Sring[] args) {
+	
+	public static void main(String[] args) {
 		System.out.println("Player name: " + name + "\n Team: " + team + "\n Goals: " + goals);
 		System.out.println(player.getName + "scoreda goal at minute: " + minute);
 		Date date1 = new Date(18, 10, 2019);
@@ -17,13 +19,13 @@ public class SoccerMatch {
 		System.out.println(" " + visitorGoals);
 		System.out.println(" " + homeGoals);
 		
-		}
 	}
+	
 	Date startTime;
 	Date endTime;
 	String venue;
 	String home;
-	Sring visitor;
+	String visitor;
 	Player homePlayer[];
 	Player visitorPlayer[];
 	Goal homeGoals[];
@@ -40,17 +42,22 @@ public class SoccerMatch {
 			visitorPlayer[i] = new Player();
 		}
 		for(int j = 0; j < 10; j++){
-		homeGoals[j] = new Goal();
-		visitorGoals[j] = new Goal();
+			homeGoals[j] = new Goal();
+			visitorGoals[j] = new Goal();
+		}
 	}
+	
 	SoccerMatch(Date startTime, Date endTime, Date venue, Date home, Date visitor){
 	}
+	
 	public void addHomePlayer(Player p) {
 		homePlayer[homePlayerCounter++] = p;
 	}
+	
 	public void addVisitorPlayer(Player p) {
 		visitorPlayer[visitorPlayerCounter++] = p;
 	}
+	
 	public void addHomeGoal(Goal g){
 		homeGoals[homeGoalCounter++] = g;
 	}
@@ -66,7 +73,8 @@ public class SoccerMatch {
 	}
 	
 }
-public class Player {
+
+class Player {
 	private String name;
 	private int goals;
 	private String team;
@@ -93,7 +101,7 @@ public class Player {
 	}
 }
 
-public class Goal {
+class Goal {
 	private int minute;
 	private Player player;
 	Goal(){
