@@ -4,22 +4,26 @@ public class almostPerfect {
 	public static void main(String[] args) {
 		int sum = 0;
 		Scanner input = new Scanner(System.in);
-		System.out.println("Enter a number: ");
-		double num = num.nextInt;
-		for(int i = 1; i<num; i++) {
-			if(num%i==0) {
-				sum = sum +1;
-			}
-		}
-		if(sum == num) {
-			System.out.println(num + "Perfect");
-		}
-		if (sum == num + 1) {
-			System.out.println(num + "Almost Perfect");
-		}
-		else
-			System.out.println(num + "Not perfect");
+		for(int i = 0; i < 500; i++) {
+				System.out.println("Enter a number: ");
+				int num = input.nextInt();
+				for(int j = 1; j<num; j++) {
+					if(num%j==0) {
+						sum = sum + j;
+					}
+				}
+				if(sum == num) {
+					System.out.println(num + "Perfect");
+				}
+				if (sum == num + 2 || sum == num - 2) {
+					System.out.println(num + "Almost Perfect");
+				}
+				else
+					System.out.println(num + "Not perfect");
 
-	}
+		}
 
 }
+		
+	}
+
