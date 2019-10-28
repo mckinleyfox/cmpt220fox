@@ -1,3 +1,4 @@
+// No test class?
 public class MyLong {
 	private Long value;
 	public MyLong(Long value) {
@@ -25,9 +26,8 @@ public class MyLong {
 			if(value % i == 0) {
 				return false;
 			}
-			else
-				return true;
 		}
+		return true;
 	}
 	public boolean isEven(long value) {
 		if(value % 2 == 0) {
@@ -48,9 +48,8 @@ public class MyLong {
 			if(value % i == 0) {
 				return false;
 			}
-			else
-				return true;
 		}
+		return true;
 	}
 	public boolean isEven(MyLong mylo) {
 		if(mylo.getValue() % 2 == 0) {
@@ -71,17 +70,17 @@ public class MyLong {
 			if(mylo.getValue() % i == 0) {
 				return false;
 			}
-			else
-				return true;
 		}
+		return true;
 	}
 	public static long parseLong(char chars[]) {
 		String s = " ";
 		for(int i =0; i < chars.length; i++) {
 			s += chars[i];
 		}
+		return parseLong(s);
 	}
-	public static long parsLong(String s) {
+	public static long parseLong(String s) {
 		return Long.parseLong(s);
 	}
 }

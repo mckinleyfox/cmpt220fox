@@ -13,6 +13,7 @@ public class Circle {
 	public double getY() {
 		return y;
 	}
+	// getArea() ?
 	public double getRadius() {
 		return radius;
 	}
@@ -31,5 +32,5 @@ public class Circle {
 		}
 		else
 			return false;
-		}
+	}
 }
