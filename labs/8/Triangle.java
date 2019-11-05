@@ -14,6 +14,15 @@ public class Triangle extends GeometricObject {
 		this.side2 = side2;
 		this.side3 = side3;
 	}
+	
+	public Triangle(double side1, double side2, double side3, String color, boolean filled) {
+		this.side1 = side1;
+		this.side2 = side2;
+		this.side3 = side3;
+		this.setColor(color);
+		this.setFilled(filled);
+	}
+	
 	public void setside1(double side1) {
 		this.side1 = side1;
 	}

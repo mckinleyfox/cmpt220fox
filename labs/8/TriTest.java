@@ -7,7 +7,7 @@ public class TriTest {
 		double side3;
 		String color;
 		String fill;
-		boolean TriFilled;
+		boolean triFilled;
 		
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter a number for side 1");
@@ -21,12 +21,15 @@ public class TriTest {
 	    System.out.println("Is the triangle filled?(Y or N)");
 	    	fill = input.next();
 	    if(fill.charAt(0)== 'Y') {
-	    	TriFilled = true;
+	    	triFilled = true;
 	    }
 	    else
-	    	TriFilled = false;
+	    	triFilled = false;
 	    
-	    Triangle tri = new Triangle(side1, side2, side3, color, fill);
+		// JA: Your class does not have this constructor. You need to add it.
+	    Triangle tri = new Triangle(side1, side2, side3, color, triFilled);
+		
+		// JA: Print output?
 	}
 	
 	

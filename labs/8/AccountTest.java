@@ -13,7 +13,7 @@ public class AccountTest {
 		System.out.println("Annual Interest Rate: " + mainAccount.getAnnualIntRate());
 		System.out.println("Date created: " + mainAccount.getDateCreated());
 		System.out.println("toString: " + mainAccount.toString());
-		System.out.println("toString: " + checkings.toString());
-		System.out.println("toString: " + savings.toString());
+		System.out.println("toString: " + check.toString());
+		System.out.println("toString: " + saving.toString());
 	}
 }

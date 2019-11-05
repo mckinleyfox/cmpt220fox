@@ -10,15 +10,15 @@ public class TestArrayList {
 			numbers.add(input.nextInt());
 			i++;
 		}
-		for(int j = 0 ; j < numbers.length ; j++) {
-			System.out.println("The list after sorting is: ");
+		for(int j = 0 ; j < numbers.size() ; j++) {
+			System.out.println("The list after sorting is: " + numbers.get(j));
 		}
 	}
 	public static void sort(ArrayList<Integer> numbers) {
 		int temp;
-		for(int i = 0; i < numbers.length ; i++) {
-			for(int j =0 ;j < numbers.length ; j++) {
-				if(numbers.get(j) > numbers.get(j++){
+		for(int i = 0; i < numbers.size() ; i++) {
+			for(int j =0 ;j < numbers.size() ; j++) {
+				if(numbers.get(j).intValue() > numbers.get(j++).intValue()){
 					temp = numbers.get(j++);
 					numbers.set(j++, numbers.get(j));
 					numbers.set(j,  temp);

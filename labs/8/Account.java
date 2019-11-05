@@ -35,7 +35,7 @@ public class Account {
 		return annualIntRate;
 	}
 	
-	public double setAnnualIntRate(double annualIntRate) {
+	public void setAnnualIntRate(double annualIntRate) {
 		this.annualIntRate = annualIntRate;
 	}
 	
