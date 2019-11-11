@@ -1,4 +1,4 @@
-
+// JA: You are missing a driver to test this class
 public class Triangle extends GeometricObject {
 	private double side1;
 	private double side2;
@@ -13,15 +13,15 @@ public class Triangle extends GeometricObject {
 		this.side1 = side1;
 		this.side2 = side2;
 		this.side3 = side3;
+//		try {
+			if((side1 + side2) < side3 || (side2 + side3) < side1 || (side1 + side3) < side2) {
+				throw new IllegalTriangleException();
+			}
+//		} catch(IllegalTriangleException ex) {
+//			System.out.println(ex);
+//		}
 	}
-	try {
-		if((side1 + side2) < side3 || (side2 + side3) < side1 || (side1 + side3) < side2) {
-			throw new IllegalTriangleException;
-		}
-	catch(IllegalTriangleException ex) {
-		System.out.println(ex);
-	}
-	}
+	
 	public double getSide1() {
 		return side1;
 	}
