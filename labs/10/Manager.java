@@ -1,10 +1,12 @@
 
-public class Manager extends Employee {
-	public Manager(String name, double age, double hourRate) {
-		super(name, age, hourRate);
+public class Manager implements Printable{
+	private String name;
+	private long number;
+	public Manager( String name, long number) {
+		this.name = name;
+		this.number = number;
 	}
-	@Override
-	public double salary(double hours) {
-		return hourRate * hours;
+	public void print() {
+		System.out.println("Manager : name "+ name +", number : "+ number);
 	}
 }
