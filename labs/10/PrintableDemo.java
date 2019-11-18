@@ -1,7 +1,7 @@
 
 public class PrintableDemo {
 	public static void main(String args[]) {
-		Printable vec[] = {
+		Printable vec[] = { // JA: Where is the Printable interface defined?
 				new Rectangle(200,100),
 				new SportCar("Fiat", 7892321), 
 				new Rectangle(34,32),

@@ -1,4 +1,4 @@
-package lab10q4;
+//package lab10q4;
 
 public class Appliance implements Comparable{
 	private double voltage;

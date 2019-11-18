@@ -1,4 +1,4 @@
-
+// JA: To use this clss in problem 2 you need a different constructor
 public class Manager implements Printable{
 	private String name;
 	private long number;
