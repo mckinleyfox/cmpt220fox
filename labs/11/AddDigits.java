@@ -16,11 +16,11 @@ public class AddDigits {
 	}
 	public static int sumDigits(long n) {
 		if(n==0)
-			return sum;
+			return 0;
 		else {
-			sum = sum + (int)n % 10;
-			n = n/10;
-			return sum;
+//			sum = sum + (int)n % 10;
+//			n = n/10;
+			return sumDigits(n/10) + n % 10;
 		}
 	}
 }
